@@ -9,10 +9,20 @@ function App() {
   }
   return (
     <>
-      <button onClick={()=>concatlink("https://picsum.photos/200")}>Botão1</button>
-      <button onClick={()=>concatlink("https://picsum.photos/300")}>Botão2</button>
-      <button onClick={()=>concatlink("https://picsum.photos/400")}>Botão3</button>
-      <img src={links}/>
+      <div className="container">
+        <div className="card">
+          <button onClick={()=>concatlink("https://picsum.photos/200")}>Botão1</button>
+        </div>
+        <div className="card">
+          <button onClick={()=>concatlink("https://picsum.photos/300")}>Botão1</button>
+        </div>
+        <div className="card">
+          <button onClick={()=>concatlink("https://picsum.photos/400")}>Botão1</button>
+        </div>
+      </div>
+      <div className="container-foto">
+        <img alt="imagem" src={links}/>
+      </div>
     </>
   );
 }
