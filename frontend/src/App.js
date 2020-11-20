@@ -9,19 +9,34 @@ function App() {
   }
   return (
     <>
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+    </head> 
       <div className="container">
-        <div className="card">
-          <button onClick={()=>concatlink("https://picsum.photos/200")}>Botão1</button>
+        <div className="titulo">
+          <h3>Selecione para que tipo dispositivo você deseja uma imagem!</h3>
         </div>
         <div className="card">
-          <button onClick={()=>concatlink("https://picsum.photos/300")}>Botão1</button>
+          <h1>Ipad</h1><i class="material-icons">tablet_mac</i>
+          <div className="button">
+            <button onClick={()=>concatlink("https://picsum.photos/2732/2048")}><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
         </div>
         <div className="card">
-          <button onClick={()=>concatlink("https://picsum.photos/400")}>Botão1</button>
+          <h1>Iphone X</h1><i class="material-icons">phone_iphone</i>
+          <div className="button">
+            <button onClick={()=>concatlink("https://picsum.photos/1125/2436")}><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
+        </div>
+        <div className="card">
+          <h1>MacBook Air 13</h1><i class="material-icons">laptop_mac</i>
+          <div className="button">
+            <button onClick={()=>concatlink("https://picsum.photos/2560/1600")}><i class="material-icons">keyboard_arrow_down</i></button>
+          </div>
         </div>
       </div>
       <div className="container-foto">
-        <img alt="imagem" src={links}/>
+        <a href={links}><img alt="imagem" src={links} className="responsive"/></a>
       </div>
     </>
   );
