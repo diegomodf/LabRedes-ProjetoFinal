@@ -17,21 +17,21 @@ function App() {
           <h3>Selecione para que tipo dispositivo você deseja uma imagem!</h3>
         </div>
         <div className="card">
-          <h1>Ipad</h1><i class="material-icons">tablet_mac</i>
+          <h1>Ipad Pro</h1><i className="material-icons">tablet_mac</i>
           <div className="button">
-            <button onClick={()=>concatlink("https://picsum.photos/2732/2048")}><i class="material-icons">keyboard_arrow_down</i></button>
+            <button onClick={()=>concatlink("https://picsum.photos/2732/2048")}><i className="material-icons">keyboard_arrow_down</i></button>
           </div>
         </div>
         <div className="card">
-          <h1>Iphone X</h1><i class="material-icons">phone_iphone</i>
+          <h1>Iphone X</h1><i className="material-icons">phone_iphone</i>
           <div className="button">
-            <button onClick={()=>concatlink("https://picsum.photos/1125/2436")}><i class="material-icons">keyboard_arrow_down</i></button>
+            <button onClick={()=>concatlink("https://picsum.photos/1125/2436")}><i className="material-icons">keyboard_arrow_down</i></button>
           </div>
         </div>
         <div className="card">
-          <h1>MacBook Air 13</h1><i class="material-icons">laptop_mac</i>
+          <h1>MacBook Air 13</h1><i className="material-icons">laptop_mac</i>
           <div className="button">
-            <button onClick={()=>concatlink("https://picsum.photos/2560/1600")}><i class="material-icons">keyboard_arrow_down</i></button>
+            <button onClick={()=>concatlink("https://picsum.photos/2560/1600")}><i className="material-icons">keyboard_arrow_down</i></button>
           </div>
         </div>
       </div>
